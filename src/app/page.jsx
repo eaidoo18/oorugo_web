@@ -1,13 +1,16 @@
 'use client'
-import Header from './components/header'
 import { Play } from 'lucide-react'
 import { motion } from 'framer-motion'
 import { Button } from './components/ui/button'
+import Image from 'next/image'
+import Header from './components/header'
+
 const page = () => {
   return (
-    <div className='min-h-screen bg-gray-50'>
-      <Header/> 
-       <main className="container mx-auto px-4 md:px-8 py-12 md:py-20">
+    <div className='min-h-screen bg-gray-100'>
+      <Header/>
+      {/* hero */}
+       <main className="container mx-auto px-4 md:px-8 py-12 md:py-20 ">
         <div className="text-center max-w-4xl mx-auto">
           <motion.h1
             className="text-4xl md:text-6xl lg:text-7xl font-bold text-gray-900 mb-6 leading-tight"
@@ -33,11 +36,18 @@ const page = () => {
             animate={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
           >
-            <Button className="bg-sky-700 hover:bg-sky-600 text-white rounded-full px-8 py-3 text-lg font-medium">
+            <Button className="bg-sky-700 hover:bg-sky-600 text-white rounded-full p-8 py-3 text-lg font-medium">
               <Play className="w-5 h-5 mr-2" />
               Download app
             </Button>
           </motion.div>
+          <Image
+          src="/assets/adobemockup.png"
+          alt='iphone'
+          width={850}
+          height={850}
+
+          />
         </div>
         </main>
     </div>
