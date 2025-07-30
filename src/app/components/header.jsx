@@ -26,7 +26,7 @@ import { Button } from "./ui/button"
 
   return (
    <motion.header
-  className="flex items-center justify-between px-4 m-7 md:px-8 py-4 bg-white/80 shadow-sm backdrop-blur-md rounded-full "
+  className="flex items-center justify-between px-4  md:px-8 py-4 bg-white/80  backdrop-blur-md rounded-full border-2 border-gray-200"
   initial={{ y: -50, opacity: 0 }}
   animate={{ y: 0, opacity: 1 }}
   transition={{ duration: 0.6 }}

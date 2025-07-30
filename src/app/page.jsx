@@ -4,11 +4,15 @@ import { motion } from 'framer-motion'
 import { Button } from './components/ui/button'
 import Image from 'next/image'
 import Header from './components/header'
+import Footer from './components/footer'
 
 const page = () => {
   return (
-    <div className='min-h-screen bg-gray-100'>
-      <Header/>
+    <>
+    <div className='min-h-screen bg-white  '>
+      <div className="my-6 mx-15">
+       <Header />
+       </div>
       {/* hero */}
        <main className="container mx-auto px-4 md:px-8 py-12 md:py-20 ">
         <div className="text-center max-w-4xl mx-auto">
@@ -42,15 +46,17 @@ const page = () => {
             </Button>
           </motion.div>
           <Image
-          src="/assets/adobemockup.png"
+          src="/assets/Adobe15.png"
           alt='iphone'
-          width={850}
+          width={900}
           height={850}
 
           />
         </div>
         </main>
     </div>
+    <Footer/>
+    </>
   )
 }
 
